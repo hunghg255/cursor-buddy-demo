@@ -1,0 +1,20 @@
+﻿main { max-width: 1320px; margin: auto; padding: 0 48px; }
+.topbar { height: 94px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #deded6; }
+.topbar a { font-size: 23px; font-weight: 750; letter-spacing: -1px; }
+.topbar a span { color: #80709c; margin-left: 8px; }
+.topbar > span { font-size: 13px; color: #77796f; }
+.intro { padding: 76px 0 52px; text-align: center; }
+.eyebrow { font-size: 11px; letter-spacing: 2.5px; font-weight: 700; color: #77796f; }
+h1 { font-size: clamp(40px, 5vw, 66px); line-height: 1.14; letter-spacing: -2.8px; font-weight: 650; margin: 22px 0; }
+h1 span { color: #8c8e81; }
+.intro > p:last-child { font-size: 15px; line-height: 1.7; color: #73766b; max-width: 490px; margin: auto; }
+.buddies { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.portrait { height: 292px; border-radius: 120px 120px 22px 22px; display: flex; align-items: center; justify-content: center; position: relative; }
+.number { position: absolute; top: 28px; font-size: 11px; color: #73766b; letter-spacing: 1px; }
+.boop-hint { position: absolute; bottom: 23px; font-size: 11px; color: #65675e; pointer-events: none; }
+.caption { text-align: center; padding: 24px 0 28px; }
+h2 { font-size: 23px; margin: 0 0 7px; letter-spacing: -.5px; font-weight: 650; }
+.caption p { font-size: 12px; color: #7b7d73; margin: 0; }
+footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #deded6; margin-top: 35px; padding: 24px 0; font-size: 11px; color: #828478; }
+@media (max-width: 1000px) { .buddies { grid-template-columns: repeat(2, minmax(0, 1fr)); } .portrait { border-radius: 26px; } }
+@media (max-width: 560px) { main { padding: 0 22px; } .topbar { height: 76px; } .topbar > span { display: none; } .intro { padding: 48px 0 36px; } h1 { letter-spacing: -1.8px; } .buddies { grid-template-columns: 1fr; gap: 8px; } .portrait { height: 280px; } footer { flex-direction: column; } }
